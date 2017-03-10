@@ -2,7 +2,7 @@ import unittest
 import inspect
 import sys
 import os
-from Visitation_Consumer.Util.adExposureEventsUtil import *
+from Util.adExposureEventsUtil import *
 import csv
 
 
