@@ -2,9 +2,9 @@ import unittest
 import os.path
 import inspect
 import sys
-from Visitation_Consumer.Test.adExposureTests import *
-from Visitation_Consumer.Test.pixelConversionTests import *
-from Visitation_Consumer.Test.visitTrackingStoreTests import *
+from Test.adExposureTests import *
+from Test.pixelConversionTests import *
+from Test.visitTrackingStoreTests import *
 
 ##############################RUNNING ALL TEST SUITES################################################################
 class executeTestSuites():
