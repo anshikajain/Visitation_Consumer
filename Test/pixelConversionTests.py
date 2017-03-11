@@ -1,6 +1,6 @@
-from Visitation_Consumer.Util.visitTrackingStoreUtil import *
-from Visitation_Consumer.Util.adExposureEventsUtil import *
-from Visitation_Consumer.Util.pixelConversionUtil import *
+from Util.visitTrackingStoreUtil import *
+from Util.adExposureEventsUtil import *
+from Util.pixelConversionUtil import *
 
 
 class pixelConversionTests(unittest.TestCase):
