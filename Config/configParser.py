@@ -1,7 +1,11 @@
+import os
 from ConfigParser import SafeConfigParser
 
 parser = SafeConfigParser()
-parser.read('/Users/anshikajain/PycharmProjects/test/Visitation_Consumer/Config/Config.cfg')
+# locate Excel sheet
+conf_dir = os.path.dirname(os.path.realpath(__file__))
+conf_dir = script_dir + '/../Config.cfg'
+parser.read(conf_dir)
 
 g_atlantic_host=parser.get('atlantic', 'host')
 g_cassandra_host=parser.get('cassandra', 'host')
