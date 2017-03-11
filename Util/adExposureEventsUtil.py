@@ -4,7 +4,7 @@ import unittest
 import sys
 import os
 import time
-from Visitation_Consumer.Config.configParser import *
+from Config.configParser import *
 from cassandra.cluster import Cluster
 
 class adExposureEventsUtil:
