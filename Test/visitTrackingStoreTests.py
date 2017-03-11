@@ -1,5 +1,5 @@
-from Visitation_Consumer.Util.visitTrackingStoreUtil import *
-from Visitation_Consumer.Util.adExposureEventsUtil import *
+from Util.visitTrackingStoreUtil import *
+from Util.adExposureEventsUtil import *
 
 
 class visitTrackingStoreTests(unittest.TestCase):
