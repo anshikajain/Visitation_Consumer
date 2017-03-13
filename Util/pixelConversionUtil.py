@@ -15,7 +15,7 @@ class pixelConversionUtil:
         # Triggering Ad Exposure Kafka Events
         HOST = g_atlantic_host
         COMMAND = 'curl -X POST --data ' + '"' + event + '" ' + HOST + ':8086/discoveryProducerApp/test/start'
-        ssh = subprocess.Popen(["ssh", "%s" % HOST, COMMAND],
+        ssh = subprocess.Popen(["ssh -o StrictHostKeyChecking=no", "%s" % HOST, COMMAND],
                                shell=False,
                                stdout=subprocess.PIPE,
                                stderr=subprocess.PIPE)
