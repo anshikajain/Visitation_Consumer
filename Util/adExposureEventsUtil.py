@@ -16,7 +16,7 @@ class adExposureEventsUtil:
         # Triggering Ad Exposure Kafka Events
         HOST = g_atlantic_host
         COMMAND = 'curl -X POST --data ' + '"' + event + '" ' + HOST + ':8086/visitationProducer/test/start'
-        ssh = subprocess.Popen(["ssh -o StrictHostKeyChecking=no", "%s" % HOST, COMMAND],
+        ssh = subprocess.Popen(["ssh","-o","StrictHostKeyChecking=no", "%s" % HOST, COMMAND],
                                shell=False,
                                stdout=subprocess.PIPE,
                                stderr=subprocess.PIPE)
@@ -36,7 +36,7 @@ class adExposureEventsUtil:
         # Triggering Ad Exposure Kafka Events
         HOST = g_atlantic_host
         COMMAND = 'curl -X POST --data ' + '"' + event + '" ' + HOST + ':8086/visitationProducer/test/start'
-        ssh = subprocess.Popen(["ssh -o StrictHostKeyChecking=no", "%s" % HOST, COMMAND],
+        ssh = subprocess.Popen(["ssh","-o","StrictHostKeyChecking=no", "%s" % HOST, COMMAND],
                                shell=False,
                                stdout=subprocess.PIPE,
                                stderr=subprocess.PIPE)
